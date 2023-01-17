@@ -1,0 +1,300 @@
+{
+    "ships": [
+        {
+            "__type__": "Ship",
+            "name": "Emblem-Class Frigate",
+            "ship_class": "ESCORT",
+            "stats": {
+                "HP": 24,
+                "Shields": 8,
+                "Armour": 2,
+                "Evasion": 8,
+                "Speed": 6,
+                "Reactor": 6,
+                "Sensors": 8,
+                "Signature": 5,
+                "Ammo": 16,
+                "Restores": 3
+            },
+            "system_slots": 3,
+            "point_cost": 2,
+            "traits": {
+                "CIC Automation": "This ship may take an additional action during the action phase.",
+                "Efficient Point Defense": "When firing Turret and Omni Mounts as PD, reduce the Ammo and Power Costs by 1, to a minimum of 0."
+            },
+            "mounts": [
+                {
+                    "__type__": "Mount",
+                    "size": 2, "count": 1,
+                    "type": "FIXED", "position": "FORWARD",
+                    "spinal": true,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 2, "count": 2,
+                    "type": "TURRET", "position": "FORWARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 2, "count": 2,
+                    "type": "TURRET", "position": "FORWARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 2, "count": 2,
+                    "type": "TURRET", "position": "REAR",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 2,
+                    "type": "TURRET", "position": "FORWARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 2,
+                    "type": "TURRET", "position": "PORT",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 2,
+                    "type": "TURRET", "position": "STARBOARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 1,
+                    "type": "OMNI", "position": "FORWARD",
+                    "spinal": false,
+					"weapon": null
+				}
+            ],
+            "bays": [
+                {
+                    "__type__": "Bay",
+                    "size": 2, "count": 2,
+                    "positions": ["PORT"]
+                },
+                {
+                    "__type__": "Bay",
+                    "size": 2, "count": 2,
+                    "positions": ["STARBOARD"]
+                },
+                {
+                    "__type__": "Bay",
+                    "size": 1, "count": 1,
+                    "positions": ["PORT", "STARBOARD", "REAR"]
+                },
+                {
+                    "__type__": "Bay",
+                    "size": 1, "count": 1,
+                    "positions": ["PORT", "STARBOARD", "REAR"]
+                }
+            ]
+        },
+        {
+            "__type__": "Ship",
+            "name": "Sparrow-Class Corvette",
+            "ship_class": "ESCORT",
+            "stats": {
+                "HP": 16,
+                "Shields": 6,
+                "Armour": 1,
+                "Evasion": 10,
+                "Speed": 8,
+                "Reactor": 4,
+                "Sensors": 8,
+                "Signature": 3,
+                "Ammo": 16,
+                "Restores": 3
+            },
+            "system_slots": 2,
+            "point_cost": 1,
+            "traits": {
+                "Nimble": "This ship may make an additional heading adjustment during the Movement Phase."
+            },
+            "mounts": [
+                {
+                    "__type__": "Mount",
+                    "size": 2, "count": 2,
+                    "type": "FIXED", "position": "FORWARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 2,
+                    "type": "TURRET", "position": "REAR",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 1,
+                    "type": "OMNI", "position": "FORWARD",
+                    "spinal": false,
+					"weapon": null
+				}
+            ],
+            "bays": [
+                {
+                    "__type__": "Bay",
+                    "size": 2, "count": 2,
+                    "positions": ["PORT", "STARBOARD", "REAR"]
+                },
+                {
+                    "__type__": "Bay",
+                    "size": 1, "count": 2,
+                    "positions": ["FORWARD", "PORT", "REAR"]
+                },
+                {
+                    "__type__": "Bay",
+                    "size": 1, "count": 2,
+                    "positions": ["FORWARD", "STARBOARD", "REAR"]
+                }
+            ]
+        },
+        {
+            "__type__": "Ship",
+            "name": "Narwhal-Class Monitor",
+            "ship_class": "ESCORT",
+            "stats": {
+                "HP": 12,
+                "Shields": 4,
+                "Armour": 1,
+                "Evasion": 5,
+                "Speed": 4,
+                "Reactor": 6,
+                "Sensors": 3,
+                "Signature": 4,
+                "Ammo": 16,
+                "Restores": 3
+            },
+            "system_slots": 2,
+            "point_cost": 2,
+            "traits":{
+                "Fine Adjust": "This ship makes attacks with Spinal weapons with +1 Accuracy.",
+                "Watchman": "This ship gains the Firing Preparations action.\nFiring Preparations: Until the start of your next Command Phase, this ship may make an attack against any hostile Unit that moves through its Spinal Arc using its Spinal Weapon."
+            },
+            "mounts": [
+                {
+                    "__type__": "Mount",
+                    "size": 4, "count": 1,
+                    "type": "FIXED", "position": "FORWARD",
+                    "spinal": true,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 1,
+                    "type": "OMNI", "position": "REAR",
+                    "spinal": false,
+					"weapon": null
+				}
+            ],
+            "bays": []
+        },
+        {
+            "__type__": "Ship",
+            "name": "Cheng-Class Destroyer",
+            "ship_class": "LINE",
+            "stats": {
+                "HP": 35,
+                "Shields": 15,
+                "Armour": 4,
+                "Evasion": 7,
+                "Speed": 6,
+                "Reactor": 6,
+                "Sensors": 6,
+                "Signature": 7,
+                "Ammo": 24,
+                "Restores": 4
+            },
+            "system_slots": 3,
+            "point_cost": 3,
+            "traits": {
+                "Withering Broadsides": "When you hit a Ship with a Fixed Weapon, clear 1 Lock.",
+                "Ammo Efficiency": "When this Ship fires a Mount, reduce the Ammo cost by 2, to a minimum of 1."
+            },
+            "mounts": [
+                {
+                    "__type__": "Mount",
+                    "size": 3, "count": 2,
+                    "type": "FIXED", "position": "PORT",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 3, "count": 2,
+                    "type": "FIXED", "position": "STARBOARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 2, "count": 4,
+                    "type": "FIXED", "position": "PORT",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 2, "count": 4,
+                    "type": "FIXED", "position": "STARBOARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 1,
+                    "type": "TURRET", "position": "FORWARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 1,
+                    "type": "TURRET", "position": "REAR",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 1,
+                    "type": "OMNI", "position": "REAR",
+                    "spinal": false,
+					"weapon": null
+				}
+            ],
+            "bays": [
+                {
+                    "__type__": "Bay",
+                    "size": 2, "count": 2,
+                    "positions": ["FORWARD"]
+                },
+                {
+                    "__type__": "Bay",
+                    "size": 3, "count": 2,
+                    "positions": ["REAR"]
+                },
+                {
+                    "__type__": "Bay",
+                    "size": 1, "count": 1,
+                    "positions": ["PORT", "STARBOARD", "REAR"]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,150 @@
+{
+    "default": [
+        {
+            "__type__": "ShipSystem",
+            "name": "Engine",
+            "description": "Provides speed",
+            "slots": 0,
+            "hp": 3,
+            "bubble_text": ["-", "\u00bd", "0"],
+            "ship_classes": null
+        },
+        {
+            "__type__": "ShipSystem",
+            "name": "Reactor",
+            "description": "Provides power",
+            "slots": 0,
+            "hp": 3,
+            "bubble_text": ["-", "\u00bd", "0"],
+            "ship_classes": null
+        },
+        {
+            "__type__": "ShipSystem",
+            "name": "Shield Gen.",
+            "description": "Provides shields",
+            "slots": 0,
+            "hp": 2,
+            "bubble_text": ["\u00bd", "0"],
+            "ship_classes": null
+        },
+        {
+            "__type__": "ShipSystem",
+            "name": "Radar",
+            "description": "Provides sensors",
+            "slots": 0,
+            "hp": 2,
+            "bubble_text": ["\u00bd", "0"],
+            "ship_classes": null
+        },
+        {
+            "__type__": "ShipSystem",
+            "name": "Comms",
+            "description": "Provides comms",
+            "slots": 0,
+            "hp": 2,
+            "bubble_text": ["-", "0"],
+            "ship_classes": null
+        },
+        {
+            "__type__": "ShipSystem",
+            "name": "Magazine",
+            "description": "On DMG, -4 Ammo",
+            "slots": 0,
+            "hp": 0,
+            "bubble_text": [],
+            "ship_classes": null
+        },
+        {
+            "__type__": "ShipSystem",
+            "name": "DC Locker",
+            "description": "On DMG, -2 Restores",
+            "slots": 0,
+            "hp": 0,
+            "bubble_text": [],
+            "ship_classes": null
+        }
+    ],
+    "slots": [
+        {
+            "__type__": "ShipSystem",
+            "name": "Magazine Expansion",
+            "description": "+16 Ammo",
+            "slots": 1,
+            "hp": 0,
+            "bubble_text": [],
+            "ship_classes": null
+        },
+        {
+            "__type__": "ShipSystem",
+            "name": "Reinforced Magazine",
+            "description": "+8 Ammo; -2 Ammo on magazine DMG",
+            "slots": 1,
+            "hp": 0,
+            "bubble_text": [],
+            "ship_classes": null
+        },
+        {
+            "__type__": "ShipSystem",
+            "name": "Bulk Magazine",
+            "description": "+40 Ammo",
+            "slots": 2,
+            "hp": 0,
+            "bubble_text": [],
+            "ship_classes": null
+        },
+        {
+            "__type__": "ShipSystem",
+            "name": "Expanded DC Locker",
+            "description": "+2 Restores",
+            "slots": 1,
+            "hp": 0,
+            "bubble_text": [],
+            "ship_classes": null
+        },
+        {
+            "__type__": "ShipSystem",
+            "name": "Reinforced DC Locker",
+            "description": "+1 Restore; -1 Restore on locker DMG",
+            "slots": 1,
+            "hp": 0,
+            "bubble_text": [],
+            "ship_classes": null
+        },
+        {
+            "__type__": "ShipSystem",
+            "name": "Reactor Booster",
+            "description": "+2 Reactor/Power",
+            "slots": 1,
+            "hp": 0,
+            "bubble_text": [],
+            "ship_classes": null
+        },
+        {
+            "__type__": "ShipSystem",
+            "name": "Engine Booster",
+            "description": "+1 Speed",
+            "slots": 1,
+            "hp": 0,
+            "bubble_text": [],
+            "ship_classes": null
+        },
+        {
+            "__type__": "ShipSystem",
+            "name": "Radar Booster",
+            "description": "+2 Sensors",
+            "slots": 1,
+            "hp": 0,
+            "bubble_text": [],
+            "ship_classes": ["ESCORT"]
+        },
+        {
+            "__type__": "ShipSystem",
+            "name": "Armour Plating",
+            "description": "+1 Armour",
+            "slots": 1,
+            "hp": 0,
+            "bubble_text": [],
+            "ship_classes": ["LINE", "CAPITAL"]
+        }
+    ]
+}

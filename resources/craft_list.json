@@ -1,0 +1,241 @@
+{
+    "deployables": [
+        {
+            "__type__": "Deployable",
+            "name": "Chaff",
+            "stats": {
+                "HP": 0,
+                "Armour": 0,
+                "Evasion": 0,
+                "Speed": 0
+            },
+            "size": 1,
+            "power": 0,
+            "ammo": 1,
+            "tags": ["Deployable", "PD", "Mayfly", "Highlander"]
+        },
+        {
+            "__type__": "Deployable",
+            "name": "Communications Beacon",
+            "stats": {
+                "HP": 3,
+                "Armour": 0,
+                "Evasion": 6,
+                "Speed": 0
+            },
+            "size": 1,
+            "power": 0,
+            "ammo": 1,
+            "tags": ["Deployable", "Launch 3", "Highlander"]
+        },
+        {
+            "__type__": "Deployable",
+            "name": "Sensors Beacon",
+            "stats": {
+                "HP": 5,
+                "Armour": 0,
+                "Evasion": 6,
+                "Speed": 0,
+                "Sensors": 8
+            },
+            "size": 2,
+            "power": 0,
+            "ammo": 2,
+            "tags": ["Deployable", "Launch 3", "Highlander"]
+        }
+    ],
+    "payloads": [
+        {
+            "__type__": "Payload",
+            "name": "Gladiator Interceptor Missiles",
+            "size": 1,
+            "stats": {
+                "HP": 1,
+                "Armour": 0,
+                "Evasion": 10,
+                "Speed": 5
+            },
+            "power": 0,
+            "ammo": 1,
+            "ap": 0,
+            "damage": "3",
+            "tags": ["Missile", "Swarm 2", "Launch 5", "Mayfly"]
+        },
+        {
+            "__type__": "Payload",
+            "name": "Spartan Interceptor Missiles",
+            "size": 1,
+            "stats": {
+                "HP": 1,
+                "Armour": 0,
+                "Evasion": 8,
+                "Speed": 4
+            },
+            "power": 0,
+            "ammo": 1,
+            "ap": 1,
+            "damage": "3",
+            "tags": ["Missile", "Swarm 3", "Launch 4", "Mayfly"]
+        },
+        {
+            "__type__": "Payload",
+            "name": "Tracking Beacon",
+            "size": 1,
+            "stats": {
+                "HP": 1,
+                "Armour": 0,
+                "Evasion": 10,
+                "Speed": 8
+            },
+            "power": 0,
+            "ammo": 1,
+            "ap": 0,
+            "damage": "0",
+            "tags": ["Missile", "Lock 3"]
+        },
+        {
+            "__type__": "Payload",
+            "name": "Scrambler Pods",
+            "size": 1,
+            "stats": {
+                "HP": 1,
+                "Armour": 0,
+                "Evasion": 8,
+                "Speed": 6
+            },
+            "power": 0,
+            "ammo": 1,
+            "ap": 0,
+            "damage": "0",
+            "tags": ["Missile", "Jam 4"]
+        },
+        {
+            "__type__": "Payload",
+            "name": "Light Missile",
+            "size": 2,
+            "stats": {
+                "HP": 3,
+                "Armour": 0,
+                "Evasion": 8,
+                "Speed": 8
+            },
+            "power": 0,
+            "ammo": 1,
+            "ap": 6,
+            "damage": "2d6+2",
+            "tags": ["Missile"]
+        },
+        {
+            "__type__": "Payload",
+            "name": "2x2 Swarm Missile Cell",
+            "size": 2,
+            "stats": {
+                "HP": 1,
+                "Armour": 0,
+                "Evasion": 7,
+                "Speed": 7
+            },
+            "power": 0,
+            "ammo": 1,
+            "ap": 5,
+            "damage": "1d3",
+            "tags": ["Missile", "Swarm 4"]
+        },
+        {
+            "__type__": "Payload",
+            "name": "Light Sprint Missile",
+            "size": 2,
+            "stats": {
+                "HP": 2,
+                "Armour": 0,
+                "Evasion": 8,
+                "Speed": 6
+            },
+            "power": 0,
+            "ammo": 1,
+            "ap": 8,
+            "damage": "3d6+2",
+            "tags": ["Missile", "Sprints", "Reload 1"]
+        },
+        {
+            "__type__": "Payload",
+            "name": "Light Torpedo",
+            "size": 2,
+            "stats": {
+                "HP": 6,
+                "Armour": 1,
+                "Evasion": 6,
+                "Speed": 10
+            },
+            "power": 0,
+            "ammo": 1,
+            "ap": 8,
+            "damage": "4d6+4",
+            "tags": ["Torpedo", "Phasing", "Reload 1"]
+        },
+        {
+            "__type__": "Payload",
+            "name": "Standard Missile",
+            "size": 3,
+            "stats": {
+                "HP": 6,
+                "Armour": 1,
+                "Evasion": 8,
+                "Speed": 8
+            },
+            "power": 0,
+            "ammo": 2,
+            "ap": 8,
+            "damage": "4d6+3",
+            "tags": ["Missile"]
+        },
+        {
+            "__type__": "Payload",
+            "name": "4x2 Swarm Missile Cell",
+            "size": 3,
+            "stats": {
+                "HP": 1,
+                "Armour": 0,
+                "Evasion": 7,
+                "Speed": 7
+            },
+            "power": 0,
+            "ammo": 2,
+            "ap": 5,
+            "damage": "1d3",
+            "tags": ["Missile", "Swarm 8"]
+        },
+        {
+            "__type__": "Payload",
+            "name": "Standard Sprint Missile",
+            "size": 3,
+            "stats": {
+                "HP": 4,
+                "Armour": 0,
+                "Evasion": 8,
+                "Speed": 6
+            },
+            "power": 0,
+            "ammo": 2,
+            "ap": 10,
+            "damage": "5d6+4",
+            "tags": ["Missile", "Sprints", "Reload 1"]
+        },
+        {
+            "__type__": "Payload",
+            "name": "Standard Torpedo",
+            "size": 3,
+            "stats": {
+                "HP": 9,
+                "Armour": 1,
+                "Evasion": 5,
+                "Speed": 10
+            },
+            "power": 0,
+            "ammo": 2,
+            "ap": 10,
+            "damage": "7d6+5",
+            "tags": ["Torpedo", "Phasing", "Reload 1"]
+        }
+    ]
+}

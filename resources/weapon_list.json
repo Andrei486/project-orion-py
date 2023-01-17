@@ -1,0 +1,290 @@
+{
+    "weapons": [
+        {
+            "__type__": "Weapon",
+            "name": "Guardian Laser",
+            "size": 1,
+            "range": 8,
+            "power": 1,
+            "ammo": 0,
+            "ap": 1,
+            "damage": "1d3+1",
+            "tags": ["PD", "Accurate 2", "Reliable 2"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Autocannon",
+            "size": 1,
+            "range": 4,
+            "power": 0,
+            "ammo": 1,
+            "ap": 2,
+            "damage": "1d3+1",
+            "tags": ["PD", "Shots 2"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Flak Cannon",
+            "size": 1,
+            "range": 2,
+            "power": 0,
+            "ammo": 1,
+            "ap": 0,
+            "damage": "1",
+            "tags": ["PD", "Shots 1d6", "Shrapnel"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Coilgun",
+            "size": 1,
+            "range": 10,
+            "power": 1,
+            "ammo": 1,
+            "ap": 4,
+            "damage": "1d3+4",
+            "tags": ["PD", "Accurate 1", "Reload 1"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Targeting Radar",
+            "size": 1,
+            "range": 20,
+            "power": 1,
+            "ammo": 0,
+            "ap": 0,
+            "damage": "0",
+            "tags": ["EWAR", "Lock 2"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Jamming Array",
+            "size": 1,
+            "range": 10,
+            "power": 1,
+            "ammo": 0,
+            "ap": 0,
+            "damage": "0",
+            "tags": ["EWAR", "Jam 2"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Light Cannon",
+            "size": 2,
+            "range": 8,
+            "power": 0,
+            "ammo": 1,
+            "ap": 3,
+            "damage": "1d6+2",
+            "tags": []
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Light Laser",
+            "size": 2,
+            "range": 12,
+            "power": 1,
+            "ammo": 0,
+            "ap": 2,
+            "damage": "1d3+2",
+            "tags": ["Accurate 2"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Plasma Caster",
+            "size": 2,
+            "range": 4,
+            "power": 1,
+            "ammo": 0,
+            "ap": 6,
+            "damage": "1d3+3",
+            "tags": ["Accurate 1", "Reload 1"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Light Railgun",
+            "size": 2,
+            "range": 16,
+            "power": 1,
+            "ammo": 1,
+            "ap": 6,
+            "damage": "1d6+2",
+            "tags": ["Accurate 1", "Reload 1"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Tractor Beam",
+            "size": 2,
+            "range": 6,
+            "power": 1,
+            "ammo": 0,
+            "ap": 30,
+            "damage": "0",
+            "tags": ["EWAR", "Slow 3"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Aegis Laser",
+            "size": 2,
+            "range": 8,
+            "power": 2,
+            "ammo": 0,
+            "ap": 1,
+            "damage": "1d3+1",
+            "tags": ["PD", "Shots 2", "Accurate 2", "Reliable 2"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Dual Autocannons",
+            "size": 2,
+            "range": 4,
+            "power": 0,
+            "ammo": 2,
+            "ap": 2,
+            "damage": "1d3+1",
+            "tags": ["PD", "Shots 4"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Dual Flak Cannons",
+            "size": 2,
+            "range": 2,
+            "power": 0,
+            "ammo": 2,
+            "ap": 0,
+            "damage": "1",
+            "tags": ["PD", "Shots 2d6", "Shrapnel"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Dual Coilguns",
+            "size": 2,
+            "range": 10,
+            "power": 1,
+            "ammo": 2,
+            "ap": 4,
+            "damage": "1d3+4",
+            "tags": ["PD", "Shots 2", "Accurate 1", "Reload 1"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Light Spinal Rail",
+            "size": 2,
+            "range": 20,
+            "power": 1,
+            "ammo": 1,
+            "ap": 10,
+            "damage": "2d6+3",
+            "tags": ["Spinal", "Accurate 1", "Reload 1", "Breach 1"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Class C Spinal Beam",
+            "size": 2,
+            "range": 6,
+            "power": 3,
+            "ammo": 0,
+            "ap": 20,
+            "damage": "2d6+4",
+            "tags": ["Spinal", "Shred 2"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Light Spinal Cannon",
+            "size": 2,
+            "range": 8,
+            "power": 0,
+            "ammo": 2,
+            "ap": 2,
+            "damage": "1",
+            "tags": ["Spinal", "Shots 3d6", "Reload 1", "Shrapnel"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Medium Cannon",
+            "size": 3,
+            "range": 10,
+            "power": 0,
+            "ammo": 1,
+            "ap": 6,
+            "damage": "2d6+3",
+            "tags": []
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Twinned Cannon",
+            "size": 3,
+            "range": 8,
+            "power": 0,
+            "ammo": 2,
+            "ap": 3,
+            "damage": "1d6+2",
+            "tags": ["Shots 2"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Medium Laser",
+            "size": 3,
+            "range": 12,
+            "power": 1,
+            "ammo": 0,
+            "ap": 3,
+            "damage": "2d3+3",
+            "tags": ["Accurate 2"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Plasma Cannon",
+            "size": 3,
+            "range": 6,
+            "power": 2,
+            "ammo": 0,
+            "ap": 8,
+            "damage": "2d3+4",
+            "tags": ["Shred 1"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Medium Railgun",
+            "size": 3,
+            "range": 16,
+            "power": 1,
+            "ammo": 2,
+            "ap": 8,
+            "damage": "3d6+2",
+            "tags": ["Accurate 1", "Reload 1"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Medium Spinal Rail",
+            "size": 3,
+            "range": 25,
+            "power": 2,
+            "ammo": 2,
+            "ap": 20,
+            "damage": "5d6+4",
+            "tags": ["Spinal", "Reload 2", "Breach 1"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Class B Spinal Beam",
+            "size": 3,
+            "range": 6,
+            "power": 3,
+            "ammo": 0,
+            "ap": 50,
+            "damage": "4d6+5",
+            "tags": ["Spinal", "Shred 2"]
+        },
+        {
+            "__type__": "Weapon",
+            "name": "Annihilator Cannon",
+            "size": 4,
+            "range": 10,
+            "power": 0,
+            "ammo": 2,
+            "ap": 8,
+            "damage": "3d6+4",
+            "tags": ["Inaccurate 1", "Reload 1"]
+        }
+    ]
+}
