@@ -46,7 +46,7 @@ For the `-y` option, if the ship has system slots remaining after equipping all 
 ```
 python cli.py -s Emblem -w "Light Spinal Rail" "" "Coilgun" "Guardian Laser" "" "Coilgun" -y "Reactor Booster" -c "Chaff" "" "Tracking Beacon" -o test.pdf
 
-python cli.py -s Sparrow -w -c -y -o empty_sheet.pdf
+python cli.py -s Elena -w -c -y -o empty_sheet.pdf
 ```
 
 The sheets created by these commands are under the `examples` directory.

@@ -295,6 +295,309 @@
                     "positions": ["PORT", "STARBOARD", "REAR"]
                 }
             ]
+        },
+        {
+            "__type__": "Ship",
+            "name": "Proxima-Class Cruiser",
+            "ship_class": "LINE",
+            "stats": {
+                "HP": 42,
+                "Shields": 18,
+                "Armour": 5,
+                "Evasion": 6,
+                "Speed": 6,
+                "Reactor": 8,
+                "Sensors": 6,
+                "Signature": 8,
+                "Ammo": 24,
+                "Restores": 4
+            },
+            "system_slots": 3,
+            "point_cost": 4,
+            "traits": {
+                "Vindicator FCS": "Whenever an allied ship in visual range is targeted by a weapon attack, this ship may fire one of its mounts at the attacking unit as reaction, provided it has range, line of sight and vision.",
+                "Shipshape": "When you take System Damage to reduce the damage of an Attack, reduce the damage by an additional 1d6."
+            },
+            "mounts": [
+                {
+                    "__type__": "Mount",
+                    "size": 3, "count": 1,
+                    "type": "FIXED", "position": "FORWARD",
+                    "spinal": true,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 3, "count": 2,
+                    "type": "TURRET", "position": "FORWARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 3, "count": 2,
+                    "type": "TURRET", "position": "REAR",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 3, "count": 3,
+                    "type": "FIXED", "position": "PORT",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 3, "count": 3,
+                    "type": "FIXED", "position": "STARBOARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 2, "count": 2,
+                    "type": "TURRET", "position": "PORT",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 2, "count": 2,
+                    "type": "TURRET", "position": "STARBOARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 4,
+                    "type": "TURRET", "position": "REAR",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 2,
+                    "type": "OMNI", "position": "FORWARD",
+                    "spinal": false,
+					"weapon": null
+				}
+            ],
+            "bays": [
+                {
+                    "__type__": "Bay",
+                    "size": 3, "count": 2,
+                    "positions": ["FORWARD"]
+                },
+                {
+                    "__type__": "Bay",
+                    "size": 2, "count": 4,
+                    "positions": ["PORT", "STARBOARD", "REAR"]
+                },
+                {
+                    "__type__": "Bay",
+                    "size": 1, "count": 1,
+                    "positions": ["PORT", "STARBOARD", "REAR"]
+                }
+            ]
+        },
+        {
+            "__type__": "Ship",
+            "name": "Saga-Class Cruiser",
+            "ship_class": "LINE",
+            "stats": {
+                "HP": 56,
+                "Shields": 12,
+                "Armour": 6,
+                "Evasion": 5,
+                "Speed": 5,
+                "Reactor": 10,
+                "Sensors": 6,
+                "Signature": 8,
+                "Ammo": 24,
+                "Restores": 4
+            },
+            "system_slots": 3,
+            "point_cost": 4,
+            "traits": {
+                "Direct Reactor Hookup": "When this Ship fires a Mount, reduce the Power cost by 2, to a minimum of 1."
+            },
+            "mounts": [
+                {
+                    "__type__": "Mount",
+                    "size": 2, "count": 2,
+                    "type": "FIXED", "position": "FORWARD",
+                    "spinal": true,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 4, "count": 2,
+                    "type": "OMNI", "position": "REAR",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 4, "count": 2,
+                    "type": "OMNI", "position": "REAR",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 1,
+                    "type": "TURRET", "position": "PORT",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 1,
+                    "type": "TURRET", "position": "STARBOARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 1,
+                    "type": "TURRET", "position": "FORWARD",
+                    "spinal": false,
+					"weapon": null
+				}
+            ],
+            "bays": [
+                {
+                    "__type__": "Bay",
+                    "size": 3, "count": 2,
+                    "positions": ["REAR"]
+                },
+                {
+                    "__type__": "Bay",
+                    "size": 2, "count": 2,
+                    "positions": ["FORWARD", "PORT", "STARBOARD"]
+                },
+                {
+                    "__type__": "Bay",
+                    "size": 2, "count": 2,
+                    "positions": ["FORWARD", "PORT", "STARBOARD"]
+                },
+                {
+                    "__type__": "Bay",
+                    "size": 1, "count": 3,
+                    "positions": ["FORWARD", "PORT", "STARBOARD"]
+                },
+                {
+                    "__type__": "Bay",
+                    "size": 1, "count": 3,
+                    "positions": ["FORWARD", "PORT", "STARBOARD"]
+                }
+            ]
+        },
+        {
+            "__type__": "Ship",
+            "name": "Elena-Class Heavy Cruiser",
+            "ship_class": "CAPITAL",
+            "stats": {
+                "HP": 70,
+                "Shields": 16,
+                "Armour": 7,
+                "Evasion": 5,
+                "Speed": 5,
+                "Reactor": 10,
+                "Sensors": 6,
+                "Signature": 10,
+                "Ammo": 32,
+                "Restores": 6
+            },
+            "system_slots": 3,
+            "point_cost": 6,
+            "traits": {
+                "Vindicator FCS": "Whenever an allied ship in visual range is targeted by a weapon attack, this ship may fire one of its mounts at the attacking unit as reaction, provided it has range, line of sight and vision.",
+                "Patience": "Weapons with the Reload Tag gain +1 Accuracy on attack."
+            },
+            "mounts": [
+                {
+                    "__type__": "Mount",
+                    "size": 4, "count": 2,
+                    "type": "TURRET", "position": "FORWARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 4, "count": 2,
+                    "type": "TURRET", "position": "FORWARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 4, "count": 2,
+                    "type": "TURRET", "position": "REAR",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 4, "count": 2,
+                    "type": "OMNI", "position": "REAR",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 2, "count": 2,
+                    "type": "TURRET", "position": "PORT",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 2, "count": 2,
+                    "type": "TURRET", "position": "STARBOARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 2,
+                    "type": "TURRET", "position": "FORWARD",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 1,
+                    "type": "TURRET", "position": "REAR",
+                    "spinal": false,
+					"weapon": null
+				},
+                {
+                    "__type__": "Mount",
+                    "size": 1, "count": 1,
+                    "type": "OMNI", "position": "FORWARD",
+                    "spinal": false,
+					"weapon": null
+				}
+            ],
+            "bays": [
+                {
+                    "__type__": "Bay",
+                    "size": 3, "count": 2,
+                    "positions": ["PORT"]
+                },
+                {
+                    "__type__": "Bay",
+                    "size": 3, "count": 2,
+                    "positions": ["STARBOARD"]
+                },
+                {
+                    "__type__": "Bay",
+                    "size": 1, "count": 2,
+                    "positions": ["PORT", "STARBOARD", "REAR"]
+                }
+            ]
         }
     ]
 }

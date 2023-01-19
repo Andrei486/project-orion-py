@@ -100,11 +100,12 @@ class ShipSheet(FPDF):
                 self.cell(width, row_height, datum, border='T', ln=0, align='L')
     
     def get_mount_display_data(self, mount: Mount) -> List[str]:
+        mount_position_data = f"{mount._position}{mount._type}" if not mount._is_spinal_only else f"{mount._position}S"
         if not mount._weapon:
-            return [f"{self.DAMAGE_BUBBLE}", f"{mount._position}{mount._type}", "", "", "", f" (x{mount._count})", "", "", ""]
+            return [f"{self.DAMAGE_BUBBLE}", mount_position_data, "", "", "", f" (x{mount._count})", "", "", ""]
         weapon = mount._weapon
         mount_data = [str(datum) for datum in [
-            f"{self.DAMAGE_BUBBLE} {weapon._name}", f"{mount._position}{mount._type}", weapon._range, weapon._ammo_cost, weapon._power_cost,
+            f"{self.DAMAGE_BUBBLE} {weapon._name}", mount_position_data, weapon._range, weapon._ammo_cost, weapon._power_cost,
             multiply_dice(weapon.get_shots(), mount._count), weapon._ap, weapon._damage, ', '.join(weapon._tags)
         ]]
         return mount_data
@@ -177,7 +178,7 @@ class ShipSheet(FPDF):
             self.show_stats_column(ship, stats, bound[0], bound[1])
 
     def show_stats_column(self, ship: Ship, stats: List[ShipStat], start_x: int, end_x: int):
-        STAT_HEIGHT=12
+        STAT_HEIGHT=10
         for stat in stats:
             self.set_x(start_x)
             self.show_stat(ship, stat, end_x - start_x, STAT_HEIGHT, stat.is_gauge())
