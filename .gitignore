@@ -161,3 +161,4 @@ cython_debug/
 
 # Created PDFs
 /*.pdf
+*.pkl
