@@ -37,13 +37,19 @@ options:
 
 The tool is expected to produce an error if a weapon or craft cannot be equipped to its mount or bay, or if the maximum system slots are exceeded.
 
+For the `-w` and `-c` options, if fewer weapons/crafts are specified than there are mounts/bays, the remaining mounts/bays will be considered empty and filler rows will be generated for them. Empty mounts can be manually specified by providing `""` as the weapon name.
+
+For the `-y` option, if the ship has system slots remaining after equipping all specified systems, a filler row will be generated for each system point remaining.
+
 ## Examples
 
 ```
-python cli.py -s Emblem -w "Light Spinal Rail" "Coilgun" "Coilgun" "Guardian Laser" "Coilgun" "Coilgun" -y "Bulk Magazine" "Reactor Booster" -c "Chaff" "Scrambler Pods" "Tracking Beacon" -o test.pdf
+python cli.py -s Emblem -w "Light Spinal Rail" "" "Coilgun" "Guardian Laser" "" "Coilgun" -y "Reactor Booster" -c "Chaff" "" "Tracking Beacon" -o test.pdf
+
+python cli.py -s Sparrow -w -c -y -o empty_sheet.pdf
 ```
 
-The sheet created by this command is at `examples/test.pdf`.
+The sheets created by these commands are under the `examples` directory.
 
 ## Compendium
 

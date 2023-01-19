@@ -101,7 +101,7 @@ class ShipSheet(FPDF):
     
     def get_mount_display_data(self, mount: Mount) -> List[str]:
         if not mount._weapon:
-            return []
+            return [f"{self.DAMAGE_BUBBLE}", f"{mount._position}{mount._type}", "", "", "", f" (x{mount._count})", "", "", ""]
         weapon = mount._weapon
         mount_data = [str(datum) for datum in [
             f"{self.DAMAGE_BUBBLE} {weapon._name}", f"{mount._position}{mount._type}", weapon._range, weapon._ammo_cost, weapon._power_cost,
@@ -110,8 +110,8 @@ class ShipSheet(FPDF):
         return mount_data
     
     def get_bay_display_data(self, bay: Bay) -> List[str]:
-        if (not bay._craft):
-            return []
+        if not bay._craft:
+            return [f"{self.DAMAGE_BUBBLE}", "".join(str(pos) for pos in bay._positions), "", "", "", f" (x{bay._count})", "", "", ""]
         craft = bay._craft
         bay_data = [str(datum) for datum in [
             f"{self.DAMAGE_BUBBLE} {craft._name}", "".join(str(pos) for pos in bay._positions), craft.get_stat(ShipStat.SPEED), craft.get_ammo(), craft.get_power(),
@@ -123,16 +123,19 @@ class ShipSheet(FPDF):
         HEIGHT = 5
         self.set_x(start_x)
         self.set_font_from_preset("Mono")
-        damage_bubble_text = ""
-        if system._bubble_text is None:
-            damage_bubble_text = self.DAMAGE_BUBBLE * system._hp
+        if system:
+            damage_bubble_text = ""
+            if system._bubble_text is None:
+                damage_bubble_text = self.DAMAGE_BUBBLE * system._hp
+            else:
+                damage_bubble_text = "".join(f"[{text}]" for text in system._bubble_text)
+            data = [system._name, damage_bubble_text, system._description]
         else:
-            damage_bubble_text = "".join(f"[{text}]" for text in system._bubble_text)
-        data = [system._name, damage_bubble_text, system._description]
+            data = [""] * 3
         max_width = end_x - start_x
         cell_widths = [max_width * 0.35, max_width * 0.2, max_width * 0.45]
         for datum, width in zip(data, cell_widths):
-            self.cell(int(width), HEIGHT, datum, border='T', ln=0, align='L')
+            self.cell(int(width), HEIGHT, datum, border='T' if system else 'TB', ln=0, align='L')
         return HEIGHT
     
     def create_system_table(self, systems: List[ShipSystem], heading: str, start_x: float, end_x: float):
@@ -209,7 +212,7 @@ class ShipSheet(FPDF):
         self.create_system_table([system for system in ship._systems if system._slots == 0], "SYSTEMS - CORE", self.l_margin, (self.w / 2) - 5)
         core_systems_end_y = self.get_y()
         self.set_y(systems_y)
-        self.create_system_table([system for system in ship._systems if system._slots > 0], "SYSTEMS - SLOTS", (self.w / 2), self.w - self.r_margin)
+        self.create_system_table([system for system in ship._systems if system._slots > 0] + [None] * ship.get_free_system_slots(), "SYSTEMS - SLOTS", (self.w / 2), self.w - self.r_margin)
         slot_systems_end_y = self.get_y()
         self.set_y(max(core_systems_end_y, slot_systems_end_y))
         self.set_font_from_preset("Heading 2")

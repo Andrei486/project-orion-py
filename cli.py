@@ -17,14 +17,16 @@ if __name__ == "__main__":
     comp = compendium.get_compendium()
     ship = comp.get_ship(args.ship)
     comp.equip_default_systems(ship)
-    weapons = [comp.get_weapon(weapon) for weapon in args.weapons] if args.weapons else []
+    weapons = [comp.get_weapon(weapon) if weapon else None for weapon in args.weapons] if args.weapons else []
     systems = [comp.get_system(system) for system in args.systems] if args.systems else []
-    crafts = [comp.get_craft(craft) for craft in args.crafts] if args.crafts else []
+    crafts = [comp.get_craft(craft) if craft else None for craft in args.crafts] if args.crafts else []
     for system in systems:
         ship.equip(system)
     for weapon, mount in zip(weapons, ship._mounts):
-        mount.equip(weapon)
+        if weapon:
+            mount.equip(weapon)
     for craft, bay in zip(crafts, ship._bays):
-        bay.equip(craft)
+        if craft:
+            bay.equip(craft)
     sheet = ShipSheet()
     sheet.create_sheet(ship, args.output)
