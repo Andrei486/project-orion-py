@@ -8,15 +8,13 @@ This command-line application creates ship character sheets for Project Orion sh
 ## First time setup
 You will need a version of Python 3 installed before completing this setup. See https://www.python.org/downloads/ for the latest Python download links.
 
-Clone the git repo into an empty directory. Then, navigate to the directory on the Windows `cmd` terminal, by doing one of:
-- Open cmd.exe from the Start menu and `cd` to the target directory
-- Right-click on the target directory in Windows Explorer and select "Open in Terminal"
+Clone the git repo into an empty directory. Then, navigate to the directory on the Windows `cmd` terminal. To do so, open the Command Prompt from the Start menu and `cd` to the target directory (you may want to copy the full directory path from the Windows Explorer to do this, then `cd "<absolute directory path here>"`).
 
-Then, run the following command (paste into terminal): `setup.bat`.
+Then, run the following command (paste into terminal): `.\setup.bat`.
 
 ## Usage
 
-Navigate to this file's directory in the Terminal, as specified in the Setup section. Then, run the command `./venv/Scripts/activate.bat` in the Terminal. The tool is then ready to be used. This setup command must be run **every time** a new Terminal is opened for this tool.
+Navigate to this file's directory in the Terminal, as specified in the Setup section. Then, run the command `.\venv\Scripts\activate.bat` in the Terminal. If you see `(venv) at the start of your command prompt, the tool is ready to be used. This setup command must be run **every time** a new Terminal is opened for this tool.
 Run `python cli.py -h` for help:
 ```
 python cli.py -h  
