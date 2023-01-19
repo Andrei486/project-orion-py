@@ -14,7 +14,7 @@ Then, run the following command (paste into terminal): `.\setup.bat`.
 
 ## Usage
 
-Navigate to this file's directory in the Terminal, as specified in the Setup section. Then, run the command `.\venv\Scripts\activate.bat` in the Terminal. If you see `(venv) at the start of your command prompt, the tool is ready to be used. This setup command must be run **every time** a new Terminal is opened for this tool.
+Navigate to this file's directory in the Terminal, as specified in the Setup section. Then, run the command `.\venv\Scripts\activate.bat` in the Terminal. If you see `(venv)` at the start of your command prompt, the tool is ready to be used. This setup command must be run **every time** a new Terminal is opened for this tool.
 Run `python cli.py -h` for help:
 ```
 python cli.py -h  
