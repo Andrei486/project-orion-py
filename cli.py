@@ -10,6 +10,7 @@ def parse_args():
     parser.add_argument("-c", "--crafts", nargs="*", help="The names of crafts to assign to bays, double-quoted and in order. Ex: \"Light Missile\" \"Standard Torpedo\" \"Chaff\"")
     parser.add_argument("-y", "--systems", nargs="*", help="The names of all non-default systems to equip, double-quoted. Ex: \"Reinforced Magazine\" \"Radar Booster\"")
     parser.add_argument("-o", "--output", required=True, help="Output file path for the character sheet PDF.")
+    parser.add_argument("-f", "--fancy", action="store_true", help="Provide this option to use fancy fonts. Requires the font files to be correctly set up - DO NOT USE with the packaged executable!")
     return parser.parse_args()
 
 if __name__ == "__main__":
@@ -28,5 +29,5 @@ if __name__ == "__main__":
     for craft, bay in zip(crafts, ship._bays):
         if craft:
             bay.equip(craft)
-    sheet = ShipSheet()
+    sheet = ShipSheet(use_base_fonts=not args.fancy)
     sheet.create_sheet(ship, args.output)

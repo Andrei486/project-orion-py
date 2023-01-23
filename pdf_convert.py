@@ -18,7 +18,7 @@ class ShipSheet(FPDF):
         "NAME", "DESCRIPTION"
     ]
     DAMAGE_BUBBLE = "[_]"
-    FONT_PRESETS = {
+    FANCY_FONT_PRESETS = {
         "Heading 2": {
             "font": ('DejaVu', 'B', 14),
             "color": (40, 40, 100)
@@ -45,6 +45,39 @@ class ShipSheet(FPDF):
         },
     }
 
+    BASE_FONT_PRESETS = {
+        "Heading 2": {
+            "font": ('Arial', 'B', 14),
+            "color": (40, 40, 100)
+        },
+        "Heading 3": {
+            "font": ('Arial', 'B', 10),
+            "color": (40, 40, 100)
+        },
+        "Mono Heading 3": {
+            "font": ('Courier', 'B', 10),
+            "color": (0, 0, 0)
+        },
+        "Paragraph": {
+            "font": ('Courier', '', 10),
+            "color": (0, 0, 0)
+        },
+        "Mono": {
+            "font": ("Courier", '', 8),
+            "color": (0, 0, 0)
+        },
+        "Stat Box": {
+            "font": ("Arial", '', 12),
+            "color": (0, 0, 0)
+        },
+    }
+
+    def __init__(self, orientation = 'P', unit = 'mm', format='A4', use_base_fonts: bool=True):
+        super().__init__(orientation, unit, format)
+        self._font_presets = self.BASE_FONT_PRESETS if use_base_fonts else self.FANCY_FONT_PRESETS
+        if not use_base_fonts:
+            self.import_fonts()
+
     def import_fonts(self):
         self.add_font("DejaVu", "", "DejaVuSansCondensed.ttf", uni=True)
         self.add_font("DejaVu", "B", "DejaVuSansCondensed-Bold.ttf", uni=True)
@@ -54,8 +87,8 @@ class ShipSheet(FPDF):
         self.add_font("DejaVu Condensed", "B", "DejaVuSansCondensed-Bold.ttf", uni=True)
 
     def set_font_from_preset(self, preset_name: str):
-        self.set_font(*self.FONT_PRESETS.get(preset_name).get("font"))
-        self.set_text_color(*self.FONT_PRESETS.get(preset_name).get("color"))
+        self.set_font(*self._font_presets.get(preset_name).get("font"))
+        self.set_text_color(*self._font_presets.get(preset_name).get("color"))
 
     def create_mount_table(self, mounts: List[Mount]):
         self.set_font_from_preset("Mono Heading 3")
@@ -201,7 +234,6 @@ class ShipSheet(FPDF):
         pass
     
     def create_sheet(self, ship: Ship, output_path: str):
-        self.import_fonts()
         self.alias_nb_pages()
         self.add_page()
         self.set_font_from_preset("Heading 2")
