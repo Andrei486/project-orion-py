@@ -36,7 +36,8 @@ SHIP_CLASS_TRAITS = {
     },
     ShipClass.CAPITAL: {
         "Supreme Shielding": "When using Charge Shields, this ship generates +2 Shields per Power spent.",
-        "Well Defended": "When this ship takes system damage to reduce damage, reduce the damage taken by 2d6 instead of 1d6."
+        "Well Defended": "When this ship takes system damage to reduce damage, reduce the damage taken by 2d6 instead of 1d6.",
+        "Like a Cow": "This ship can only adjust its heading at the end of its Movement Phase."
     }
 }
 

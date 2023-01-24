@@ -128,8 +128,8 @@ class Mount():
         self._weapon = None
         self._is_spinal_only = is_spinal_only
         self._equip_predicate = equip_restrictions
-        if self._is_spinal_only:
-            self._equip_predicate = lambda w : equip_restrictions(w) and w.is_spinal()
+        if not self._is_spinal_only:
+            self._equip_predicate = lambda w : equip_restrictions(w) and not w.is_spinal()
 
     def equip(self, weapon: Weapon) -> bool:
         if self.can_equip(weapon):

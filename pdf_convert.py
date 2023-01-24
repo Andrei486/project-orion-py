@@ -135,7 +135,7 @@ class ShipSheet(FPDF):
     def get_mount_display_data(self, mount: Mount) -> List[str]:
         mount_position_data = f"{mount._position}{mount._type}" if not mount._is_spinal_only else f"{mount._position}S"
         if not mount._weapon:
-            return [f"{self.DAMAGE_BUBBLE}", mount_position_data, "", "", "", f" (x{mount._count})", "", "", ""]
+            return [f"{self.DAMAGE_BUBBLE} (S{mount._size})", mount_position_data, "", "", "", f" (x{mount._count})", "", "", ""]
         weapon = mount._weapon
         mount_data = [str(datum) for datum in [
             f"{self.DAMAGE_BUBBLE} {weapon._name}", mount_position_data, weapon._range, weapon._ammo_cost, weapon._power_cost,
