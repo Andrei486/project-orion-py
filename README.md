@@ -64,10 +64,10 @@ Ship templates, systems, weapons, and crafts are defined in JSON files under the
 ## Executable Usage
 
 ### First time setup
-Download the `cli.exe` file from the GitHub repository, to a known location on your computer.
+Download the `ship_creator.zip` folder from the GitHub repository. Extract its files into a known location on your computer.
 
 ### Running the program
-Navigate to the `cli.exe` file's directory in the Terminal. To do so, copy the directory path in the File Explorer. Then, open a Command Prompt via the Start Menu (typing "cmd" should show it) and paste `cd <your path>` into the directory, replacing the path with the directory path copied earlier. If the file is on a different drive than your command prompt indicates, type in the name of the drive (ex: `D:`) then hit Enter before running the command.
+Navigate to the `cli.exe` file's directory in the Terminal. This file is contained at `dist\cli` in the extracted files - navigate there via te File Explorer, and copy the directory path. Then, open a Command Prompt via the Start Menu (typing "cmd" should show it) and paste `cd <your path>` into the directory, replacing the path with the directory path copied earlier. If the file is on a different drive than your command prompt indicates, type in the name of the drive (ex: `D:`) then hit Enter before running the command.
 
 You can then run the tool via the Terminal. You can also obtain the absolute path to the `cli.exe` file and skip the preceding step.
 Run `cli.exe -h` for help:
